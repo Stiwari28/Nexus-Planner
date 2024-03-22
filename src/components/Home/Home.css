@@ -1,0 +1,55 @@
+#homeMainDiv{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+#homeTop h1{
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    color: black;
+}
+
+#homeBottom{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBottomDivs{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1.5rem;
+    width: 25vw;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: transform 0.3s ease;
+}
+
+
+.homeBottomDivs:hover {
+    transform: translateY(-10px);
+}
+
+.BottomDivsImg img{
+    height: 25vw;
+    border-radius: 10px;
+}
+
+
+.BottomDivsName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.homepageLink{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #181717;
+}

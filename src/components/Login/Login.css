@@ -1,0 +1,65 @@
+#loginMainDiv{
+    background-color: #ebe5e5;
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginMid{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+}
+
+#loginTop h1{
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    color: black;
+}
+
+#welcomeBack{
+    font-size: 2rem;
+}
+
+#loginMid_left{
+    padding: 3rem;
+    background-color: white;
+    margin-right: 2rem;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+}
+#loginMid_left input{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom:1rem;
+    width: 100%;
+    border: none;
+    border: 1px solid black;
+    background-color: #ebe5e5;
+    color: black;
+}
+
+#loginBtnDiv{
+    margin: 10px;
+}
+
+#loginBtn{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #323030;
+    color: white;
+}
+
+#loginMid_left p{
+    font-weight: bolder;
+}
+
+#loginMid_right{
+    padding: 5px;
+    margin-left: 2rem;
+}

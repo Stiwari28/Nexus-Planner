@@ -1,0 +1,21 @@
+#logoutBtn{
+    background-color: #ebe5e5;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#logoutBtn button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 50vw;
+    height: 2vw;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

@@ -1,0 +1,19 @@
+#joinEventMainDiv{
+    background-color: #ebe5e5;
+    height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items: center;
+}
+#joinEventTop h1{
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    color: black;
+}
+#eventCardsHeading{
+    display: flex;
+  flex-direction: row;
+  justify-content:baseline;
+  align-items: center;
+}
