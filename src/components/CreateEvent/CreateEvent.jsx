@@ -27,11 +27,10 @@ const handleSubmit = async (e) => {
   try {
       const res = await axios.post('http://localhost:4200/events', formData);
       console.log(res.data);
-      alert("Event is successfully added"); // Alert the message from the response
-        if (res.status === 201) { // Check if the response status is 201 (Created)
+      alert("Event is successfully added");
+        if (res.status === 201) {
             window.location.href = '/home';
         }
-      // Optionally, you can redirect the user to another page after successful event creation.
   } catch (error) {
       console.error('Error creating event: ', error);
   }

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 // import { useEffect } from 'react';
 const LandingPage = () => {
 
-
   return (
     <>
     <div id="LandingPage">

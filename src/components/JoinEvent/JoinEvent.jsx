@@ -1,4 +1,3 @@
-// JoinEvent.jsx
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -22,10 +21,6 @@ const JoinEvent = () => {
 
     const joinEvent = async () => {
       try {
-          // Implement logic to join the event (e.g., update the event document in the database)
-          // You can use axios to send a request to the server to update the event
-          // Example:
-          // await axios.post(`http://localhost:4200/events/${eventId}/join`, { userId: currentUser._id });
           alert('Event joined successfully!');
       } catch (error) {
           console.error('Error joining event: ', error);
@@ -44,7 +39,6 @@ const JoinEvent = () => {
                         <h3>Discover a World of Events Below – Explore and Connect Today!</h3>
                     </div>
                     <div id='eventCardsMain'>
-                        {/* Map through events and display them as cards */}
                         {events.map((event) => (
                             <div key={event._id} className='eventCard'>
                                 <h2>{event.eventTitle}</h2>
@@ -53,7 +47,6 @@ const JoinEvent = () => {
                                 <p>{event. eventDate}</p>
                                 <p>{event.eventTime}</p>
                                 <p>{event.eventLocation}</p>
-                                {/* Add join event button */}
                                 <button onClick={() => joinEvent(event._id)}>Join Event</button>
                             </div>
                         ))}

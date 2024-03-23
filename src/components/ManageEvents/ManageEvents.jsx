@@ -1,4 +1,3 @@
-// ManageEvents.jsx
 import  { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -29,9 +28,7 @@ const ManageEvents = () => {
     const handleSave = async () => {
         try {
             await axios.put(`http://localhost:4200/events/${editedEvent._id}`, editedEvent);
-            // Update the events list with the edited event data
             setEvents(events.map(event => event._id === editedEvent._id ? editedEvent : event));
-            // Clear the editedEvent state to exit edit mode
             setEditedEvent(null);
             console.log('Event edited and saved successfully');
         } catch (error) {
@@ -65,7 +62,6 @@ const ManageEvents = () => {
                         <h3>Event Control Panel</h3>
                     </div>
                     <div id='eventCardsMain'>
-                        {/* Map through events and display them as cards */}
                         {events.map((event) => (
                             <div key={event._id} className='eventCard'>
                                 {editedEvent && editedEvent._id === event._id ? (
@@ -73,7 +69,6 @@ const ManageEvents = () => {
                                         <input type="text" name="eventTitle" value={editedEvent.eventTitle} onChange={handleChange} />
                                         <input type="text" name="eventDescription" value={editedEvent.eventDescription} onChange={handleChange} />
                                         <input type="text" name="eventDate" value={editedEvent.eventDate} onChange={handleChange} />
-                                        {/* Add inputs for other fields */}
                                         <button onClick={handleSave}>Save</button>
                                     </div>
                                 ) : (
@@ -81,7 +76,6 @@ const ManageEvents = () => {
                                         <h2>{event.eventTitle}</h2>
                                         <p>{event.eventDescription}</p>
                                         <p>Date: {event.eventDate}</p>
-                                        {/* Add other fields */}
                                         <button onClick={() => handleEdit(event._id)}>Edit</button>
                                         <button onClick={() => handleDelete(event._id)}>Delete</button>
                                     </div>

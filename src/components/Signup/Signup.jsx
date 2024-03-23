@@ -28,7 +28,7 @@ const Signup = () => {
                 body: JSON.stringify(formData)
             });
             const data = await response.json();
-            alert(data.message); // Display success message
+            alert(data.message);
         } catch (error) {
             console.error('Error during user registration:', error);
             alert('Registration failed. Please try again.');

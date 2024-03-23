@@ -1,4 +1,3 @@
-// Logout.jsx
 // import React from 'react';
 import './Logout.css'
 const Logout = () => {
