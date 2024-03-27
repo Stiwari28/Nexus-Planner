@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-
+    
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         userEmail: '',
@@ -28,7 +29,7 @@ const Login = () => {
             const data = await response.json();
             alert(data.message);
             if (response.ok) {
-                window.location.href = '/home';
+                navigate("/home");
             }
         } catch (error) {
             console.error('Error during user login:', error);
@@ -36,12 +37,6 @@ const Login = () => {
         }
     };
 
-    useEffect(() => {
-        // Prevent user from going back to signup page after successful signup
-        if (window.location.pathname === '/home') {
-            window.history.replaceState(null, '', '/home');
-        }
-    }, []);
 
 
     return (

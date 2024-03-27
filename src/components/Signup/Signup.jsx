@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import './Signup.css';
 import { Link} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
-
-
+  
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         uName: '',
         userName: '',
@@ -30,7 +31,7 @@ const Signup = () => {
             const data = await response.json();
             alert(data.message);
             if (response.ok) {
-                window.location.href = '/home';
+                navigate("/home");
             }
         } catch (error) {
             console.error('Error during user registration:', error);
@@ -38,12 +39,6 @@ const Signup = () => {
         }
     };
 
-    useEffect(() => {
-        // Prevent user from going back to signup page after successful signup
-        if (window.location.pathname === '/home') {
-            window.history.replaceState(null, '', '/home');
-        }
-    }, []);
 
     return (
         <>
