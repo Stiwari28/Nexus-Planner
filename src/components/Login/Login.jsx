@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 
@@ -35,6 +35,14 @@ const Login = () => {
             alert('Login failed. Please try again.');
         }
     };
+
+    useEffect(() => {
+        // Prevent user from going back to signup page after successful signup
+        if (window.location.pathname === '/home') {
+            window.history.replaceState(null, '', '/home');
+        }
+    }, []);
+
 
     return (
         <>
