@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import Logout from '../Logout/Logout';
+import { useNavigate } from "react-router-dom";
 const CreateEvent = () => {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     eventOrganizer: '',
     eventOrganizerEmail:'',
@@ -29,7 +33,7 @@ const handleSubmit = async (e) => {
       console.log(res.data);
       alert("Event is successfully added");
         if (res.status === 201) {
-            window.location.href = '/home';
+          navigate("/home");
         }
   } catch (error) {
       console.error('Error creating event: ', error);
