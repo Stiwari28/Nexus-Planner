@@ -47,7 +47,7 @@ const Login = () => {
                 </div>
                 <div id='loginMid'>
                     <div id='loginMid_right'>
-                        <img src="/public/login.gif" alt="login" />
+                        <img src="public/login.gif" alt="login" />
                     </div>
                     <div id='loginMid_left'>
                         <p id='welcomeBack'>Welcome Back!!!</p>

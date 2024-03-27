@@ -16,7 +16,7 @@ const Home = () => {
       <div id='homeBottom'>
       <div className='homeBottomDivs'>
           <div className='BottomDivsImg'>
-          <img src="/public/createEvent.gif" alt="createEvent" />
+          <img src="public/createEvent.gif" alt="createEvent" />
           </div>
           <div className='BottomDivsName'>
           <Link to='/createEvent' className='homepageLink'>
@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         <div className='homeBottomDivs'>
           <div className='BottomDivsImg'>
-          <img src="/public/joinEvent.gif" alt="joinEvent" />
+          <img src="public/joinEvent.gif" alt="joinEvent" />
           </div>
           <div className='BottomDivsName'>
           <Link to='/joinEvent'  className='homepageLink'>
@@ -36,7 +36,7 @@ const Home = () => {
         </div>
         <div className='homeBottomDivs'>
           <div className='BottomDivsImg'>
-          <img src="/public/manageEvents.gif" alt="manageEvent" />
+          <img src="public/manageEvents.gif" alt="manageEvent" />
           </div>
           <div className='BottomDivsName'>
           <Link to='/manageEvents'  className='homepageLink'>
