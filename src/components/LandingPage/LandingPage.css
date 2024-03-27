@@ -22,7 +22,7 @@ body{
     width: 60%;
 }
 
-#mainContainerImg{
+#mainContainerImg{ 
     background-image: url('src/assets/LandingPage.gif');
     background-position: center;
     background-size: cover;
