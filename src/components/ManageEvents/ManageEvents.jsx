@@ -49,7 +49,6 @@ const ManageEvents = () => {
       } catch (error) {
           console.error('Error deleting event: ', error);
       }
-      alert('Event deleted successfully');
   };
 
     return (

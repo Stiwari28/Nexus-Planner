@@ -63,7 +63,7 @@ const Signup = () => {
                         </div>
                     </div>
                     <div id='signupMid_right'>
-                        <img src="src/assets/signup.gif" alt="signup" />
+                        <img src="/public/signup.gif" alt="signup" />
                     </div>
                 </div>
             </div>

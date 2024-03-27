@@ -47,7 +47,7 @@ const Login = () => {
                 </div>
                 <div id='loginMid'>
                     <div id='loginMid_right'>
-                        <img src="src/assets/login.gif" alt="login" />
+                        <img src="/public/login.gif" alt="login" />
                     </div>
                     <div id='loginMid_left'>
                         <p id='welcomeBack'>Welcome Back!!!</p>
@@ -60,7 +60,6 @@ const Login = () => {
                         </form>
                         <div id='loginBottom'>
                             <p>New to NexusPlanner? <Link to='/signup' className='greyLink'>SignUp</Link></p>
-                            <p>Go to homepage without signing in <Link to='/home' className='greyLink'>Click Here</Link></p>
                         </div>
                     </div>
                 </div>

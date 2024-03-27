@@ -9,7 +9,7 @@ const ErrorPage = () => {
    <>
    <div id='errorMainDiv'>
    <div id='errorImgDiv'>
-    <img src="src/assets/AreYouLost.gif" ></img>
+    <img src="/public/AreYouLost.gif" ></img>
     </div>
     <div id='errorBtnDiv'>
         <h3>Seems like you are lost.</h3>
