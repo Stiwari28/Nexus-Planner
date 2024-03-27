@@ -23,7 +23,7 @@ function App() {
    <Route path='/createEvent' element={<CreateEvent/>}/>
    <Route path='/joinEvent' element={<JoinEvent/>}/>
    <Route path='/manageEvents' element={<ManageEvents/>}/>
-   <Route path='*' element={<ErrorPage/>}/>
+   <Route path='/*' element={<ErrorPage/>}/>
     </Routes>
    </BrowserRouter>
     </>
