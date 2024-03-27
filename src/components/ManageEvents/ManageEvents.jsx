@@ -46,7 +46,7 @@ const ManageEvents = () => {
       try {
           await axios.delete(`http://localhost:4200/events/${eventId}`);
           setEvents(events.filter(event => event._id !== eventId));
-          console.log('Event deleted successfully');
+          alert('Event deleted successfully');
       } catch (error) {
           console.error('Error deleting event: ', error);
       }
