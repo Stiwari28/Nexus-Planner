@@ -24,7 +24,8 @@
     border-radius: 10px;
     padding: 5px;
     margin: 1.5rem;
-    width: 25vw;
+    width: fit-content;
+    height: fit-content;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     transition: transform 0.3s ease;
 }
@@ -34,11 +35,42 @@
     transform: translateY(-10px);
 }
 
-.BottomDivsImg img{
-    height: 25vw;
-    border-radius: 10px;
+.BottomDivsImg{
+    height: 15vw;
+    width: fit-content;
+    height: fit-content;
 }
 
+#createImg{
+    background-image: url('/public/createEvent.gif');
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+    margin: 10px;
+
+}
+#joinImg{
+    background-image: url('/public/joinEvent.gif');
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+    margin: 10px;
+}
+
+#manageImg{
+    background-image: url('/public/manageEvents.gif');
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+    padding: 5px;
+    margin: 10px;
+}
 
 .BottomDivsName{
     display: flex;

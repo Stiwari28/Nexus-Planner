@@ -63,7 +63,6 @@ const Signup = () => {
                         </div>
                     </div>
                     <div id='signupMid_right'>
-                        <img src="/public/signup.gif" alt="signup" />
                     </div>
                 </div>
             </div>
