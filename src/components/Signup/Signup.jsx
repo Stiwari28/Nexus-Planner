@@ -29,6 +29,9 @@ const Signup = () => {
             });
             const data = await response.json();
             alert(data.message);
+            if (response.ok) {
+                window.location.href = '/home';
+            }
         } catch (error) {
             console.error('Error during user registration:', error);
             alert('Registration failed. Please try again.');
