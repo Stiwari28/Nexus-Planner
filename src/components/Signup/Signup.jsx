@@ -44,7 +44,7 @@ const Signup = () => {
                 <div id='signupMid'>
                     <div id='signupMid_left'>
                         <p>Sign Up and unlock a world of event <br />planning possibilities with us.</p>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} id='signupForm'>
                             <input type="text" name="uName" placeholder='Enter your name' onChange={handleChange} required />
                             <input type="text" name="userName" placeholder='Set your username' onChange={handleChange} required />
                             <input type="email" name="userEmail" placeholder='Enter your Email' onChange={handleChange} required />

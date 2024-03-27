@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Logout from '../Logout/Logout';
-
+import './JoinEvent.css'
 const JoinEvent = () => {
     const [events, setEvents] = useState([]);
 
@@ -42,11 +42,11 @@ const JoinEvent = () => {
                         {events.map((event) => (
                             <div key={event._id} className='eventCard'>
                                 <h2>{event.eventTitle}</h2>
-                                <p>{event.eventCategory}</p>
-                                <p>{event.eventDescription}</p>
-                                <p>{event. eventDate}</p>
-                                <p>{event.eventTime}</p>
-                                <p>{event.eventLocation}</p>
+                                <p>Event Category:{event.eventCategory}</p>
+                                <p>Event Description: {event.eventDescription}</p>
+                                <p>Date: {event. eventDate}</p>
+                                <p>Time: {event.eventTime}</p>
+                                <p>Location: {event.eventLocation}</p>
                                 <button onClick={() => joinEvent(event._id)}>Join Event</button>
                             </div>
                         ))}

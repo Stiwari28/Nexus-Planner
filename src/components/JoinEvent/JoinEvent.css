@@ -17,3 +17,29 @@
   justify-content:baseline;
   align-items: center;
 }
+
+
+ #eventCardsMain{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 80vw;
+ }
+
+.eventCard{
+  padding: 10px;
+  background-color: rgb(254, 249, 249);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 25vw;
+  margin: 5px;
+}
+
+.eventCard button{
+  color: white;
+  background-color: black;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bolder;
+}

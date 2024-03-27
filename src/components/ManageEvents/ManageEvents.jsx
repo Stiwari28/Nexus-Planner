@@ -2,6 +2,7 @@ import  { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Logout from '../Logout/Logout';
+import './ManageEvents.css'
 
 
 const ManageEvents = () => {
